@@ -12,7 +12,7 @@ fi
 # Set DT_STAGE based on whether the URL contains ".sprint."
 if echo "$DT_ENVIRONMENT_URL" | grep -q ".sprint."; then
     DT_STAGE="sprint"
-elif echo "$DT_ENVIRONMENT_URL" | grep -q ".sprint."; then
+elif echo "$DT_ENVIRONMENT_URL" | grep -q ".dev."; then
     DT_STAGE="dev"
 else
     DT_STAGE="live"
